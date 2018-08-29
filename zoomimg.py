@@ -104,7 +104,7 @@ def zoom(imgpath,x_coord,y_coord,scale):
 			newimg_green = (int) ( (A_green * (1 - x_diff) * (1 - y_diff)) + (B_green * (x_diff) * (1 - y_diff)) + (C_green * (y_diff)*(1 - x_diff)) + (D_green * (x_diff*y_diff)))				
 
 			# Adding the values into the array
-			newrow=count/(width2)
+			newrow=count//(width2)
 			newcol=count%(width2)
 			newimg = [newimg_blue,newimg_red,newimg_green]
 			if(newcol == 0):
